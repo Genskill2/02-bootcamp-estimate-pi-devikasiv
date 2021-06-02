@@ -1,6 +1,14 @@
 import math
 import unittest
 
+       def wallis(n):
+        halfpi=1.0
+	for i in range(1,n):
+	 num=i*2
+	 den=i*2-1
+	 halfpi=halfpi*(num*num)/(den*(den+2))
+	print(2*halfpi)
+ 
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
         for i in range(0, 5):
